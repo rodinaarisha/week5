@@ -1,0 +1,119 @@
+
+      @keyframes color {
+        0% {
+          background-color: #33cccc;
+        }
+        20% {
+          background-color: #33cc36;
+        }
+        40% {
+          background-color: #b8cc33;
+        }
+        60% {
+          background-color: #fcca00;
+        }
+        80% {
+          background-color: #33cc36;
+        }
+        100% {
+          background-color: #33cccc;
+        }
+      }
+      body {
+        background-color: #33cccc; /* Fallback */
+        animation: color 2s infinite linear;
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+        font-family: "Kavoon", sans-serif;
+        font-size: 2.5em;
+        color: white;
+      }
+
+      body {
+        font-family: "Merienda", cursive;
+        margin: 0;
+        padding: 0;
+        background-color: #9edce5;
+      }
+
+      .header {
+        background-color: #333;
+        padding: 20px;
+        text-align: center;
+        border-radius: 5px;
+        background-color: #9edce5;
+        font-family: "Merienda", cursive;
+      }
+      .header h1 {
+        font-family: "Merienda", cursive;
+        color: white;
+      }
+
+      .navbar {
+        background-color: #9edce5;
+        padding: 10px;
+        text-align: center;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: #333;
+        margin: 5px;
+        padding: 10px;
+        border: 1px solid #333;
+        background-color: white;
+        border-radius: 5px;
+        background: #fff;
+        color: #333;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+
+      .navbar a:hover {
+        background-color: #3253ca;
+        color: white;
+      }
+
+      .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+        background-color: #9edce5;
+      }
+
+      .gallery-item {
+        width: 33.333%;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .gallery-item:hover {
+        transform: scale(1.03);
+        z-index: 10;
+        box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.3);
+      }
+
+      @media (max-width: 768px) {
+        .gallery-item {
+          width: 50%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .gallery-item {
+          width: 100%;
+        }
+      }
